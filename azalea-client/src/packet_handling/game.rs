@@ -163,7 +163,7 @@ pub fn send_packet_events(
                     {
                         Ok(packet) => packet,
                         Err(err) => {
-                            if raw_packet.get(0).unwrap_or_else(|| &0).eq(41) {
+                            if raw_packet.get(0).unwrap_or_else(|| &0).eq(&41) {
                                 continue;
                             }
                             error!("failed to read packet: {:?}", err);
