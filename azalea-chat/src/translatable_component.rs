@@ -1,3 +1,5 @@
+#![feature(if_let_guard)]
+
 use std::fmt::{self, Display};
 
 use serde::{Deserialize, Serialize};
